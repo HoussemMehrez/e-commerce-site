@@ -1,0 +1,50 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1A35BD;
+    border-radius: 10px;   
+    color: white;    
+    height: 30vh;      
+  }
+  @media (max-width="400px") {
+   
+  footer {
+    display: flex ;
+    flex-direction: column ;
+  }
+
+    
+  }
+  .left-section {
+    text-align: left;
+  }
+  
+  .subscription-form {
+    margin-top: 10px;
+  }
+  
+  .subscription-form input {
+    margin-right: 5px;    
+    border-radius: 10px;  
+  }
+  
+  .subscription-form button {
+    border-radius: 10px;   
+  }
+  
+  .social-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .right-section {
+    text-align: right;
+  }
+  

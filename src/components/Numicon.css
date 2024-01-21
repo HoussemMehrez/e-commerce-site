@@ -1,0 +1,25 @@
+
+.slide-counter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle-container {
+    display: flex;
+    gap: 10px;
+  }
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .circle.active {
+    background-color: blue;
+  }
