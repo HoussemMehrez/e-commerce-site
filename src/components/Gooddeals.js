@@ -1,10 +1,10 @@
 import React , { useState }from 'react'
-import './Carditem.css';
+import './Gooddeals.css';
 import { IonIcon } from '@ionic/react';
 import { cartOutline , heartOutline, arrowForwardCircleOutline,arrowBackCircleOutline} from 'ionicons/icons' ;
 import Footer from './footer'
 import Carditemm from './Carditemm';
-const Carditem = () => {
+const Gooddeals= () => {
     const [data, setData] = useState([
         {
             
@@ -172,5 +172,5 @@ const Carditem = () => {
   )
 }
 
-export default Carditem ;
+export default Gooddeals ;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { IonIcon } from '@ionic/react';
 import { heartOutline, cartOutline } from 'ionicons/icons';
-import './Carditem.css';
+import './Gooddeals.css';
 
 const Carditemm = ({ data }) => {
     
