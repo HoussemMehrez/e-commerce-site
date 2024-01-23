@@ -6,7 +6,7 @@ function Footer() {
     
     <footer>
         <div className="left-section">
-          <p> Sign up for exclusive offers, original stories,events and more.</p>
+          <p> Sign up for exclusive offers, original stories,events and less.</p>
           <div className="subscription-form">
             <input type="text" placeholder="Entrez votre e-mail" />
             <button>S'inscrire</button>
