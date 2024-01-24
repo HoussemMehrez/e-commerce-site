@@ -2,6 +2,7 @@ import react , { useState } from 'react';
 import './navbar.css';
 import { IonIcon } from '@ionic/react';
 import { menuOutline , searchOutline , heartOutline , cartOutline, personAddOutline} from 'ionicons/icons' ;
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 const   Navbar = () => {
     const [searchVisible, setSearchVisible] = useState(false);
@@ -61,8 +62,8 @@ const   Navbar = () => {
                         <dic className='categ'><a>Tablets</a></dic>
                     </div>
                 </div>
-                <div className='home'><span>Home</span></div>
-                <div className='support'><span>Support</span></div>
+                <div className='home'><Link to="/"><span>Home</span></Link></div>
+                <div className='support'><Link to="/Gooddeal"><span>Support</span></Link></div>
                 <div className='logo'><img src={require('./11.png')} alt='logo'></img></div>
                 <div className='search'>
                     <div className={`search-bar ${searchVisible ? 'active' : ''}`}>

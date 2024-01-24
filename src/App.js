@@ -1,18 +1,26 @@
-import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home';
+import Gooddeal from './pages/Gooddeal';
 import Navbar from './components/navbar';
-import Gooddeals from './components/Gooddeals';
+import Footer from './components/footer';
 
-
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Navbar />
-      <Gooddeals />
-    </div>
+    <Router>
+      <div>
+       <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Gooddeal" element={<Gooddeal />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
