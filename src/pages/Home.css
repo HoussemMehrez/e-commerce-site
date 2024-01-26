@@ -26,3 +26,11 @@
 #a50{
   margin-bottom: 10%;
 }
+.aff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aff img {
+  width: 90%;
+}

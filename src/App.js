@@ -7,6 +7,7 @@ import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Gooddeals from './pages/Gooddeals';
 import Favorits from './pages/Favorits';
+import Smartphone from './pages/Smartphone'
 import { FavoritesProvider } from './components/Favoritescontext' ;
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Gooddeal" element={<Gooddeals />} />
           <Route path="/favorits" element={<Favorits />} />
+          <Route path="/smartphone" element={<Smartphone />} />
         </Routes>
 
         <Footer />

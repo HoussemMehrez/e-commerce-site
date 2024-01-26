@@ -38,7 +38,7 @@ const   Navbar = () => {
                             <a id='clickcateg' onClick={toggleDropdown2}>Catégories</a>
                                 {dropdown2Visible && (
                                     <div className="dropdown2">
-                                        <a>Smartphone</a>
+                                        <a><Link to="/smartphone" style={{ textDecoration: 'none', color: 'inherit' }}>Smartphone</Link></a>
                                         <a>Laptops</a>
                                         <a>Printers</a>
                                         <a>Storage Devices</a>
@@ -56,7 +56,7 @@ const   Navbar = () => {
                     <div id='icon'><IonIcon icon={menuOutline} /></div>
                     <div><span>categories</span></div>
                     <div class='dropdown'>
-                        <dic className='categ'><a>Smartphone</a></dic>
+                        <dic className='categ'><a><Link to="/smartphone" style={{ textDecoration: 'none', color: 'inherit' }}>Smartphone</Link></a></dic>
                         <dic className='categ'><a></a>laptop</dic>
                         <dic className='categ'><a>printers</a></dic>
                         <dic className='categ'><a></a>storage devices</dic>

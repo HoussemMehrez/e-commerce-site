@@ -3,7 +3,7 @@ import './Home.css';
 import Carousel from '../components/carousel';
 import Slider from '../components/slider';
 import '../components/slider.css'
-
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 
 
@@ -83,7 +83,7 @@ const Home = () => {
       <Carousel cardData={cardData}/>
       <div id='a3'>
         <button id='a2'>
-        see list
+        <Link to="/Gooddeal" style={{ textDecoration: 'none', color: 'inherit' }}>See list</Link>
         </button>
       </div>
       <h3 id='a1'>
@@ -92,10 +92,10 @@ const Home = () => {
       <Carousel cardData={cardData}/>
       <div id='a3'>
         <button id='a2'>
-        see list
+        <Link to="/Gooddeal" style={{ textDecoration: 'none', color: 'inherit' }}>See list</Link>
         </button>
       </div>
-      <div>
+      <div className='aff'>
       <img id='a50'src='affiche.png' height='50%'width='100%'></img>
       </div>
      
