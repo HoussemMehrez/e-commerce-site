@@ -1,7 +1,8 @@
 import React from 'react';
 import './Home.css';
 import Carousel from '../components/carousel';
-
+import Slider from '../components/slider';
+import '../components/slider.css'
 
 
 
@@ -70,9 +71,11 @@ const Home = () => {
      
     },
     
-  ];  
+  ]
+  const images = ['affiche.png', 'affiche1.png', 'affiche.png'];;  
   return (
     <div >
+      <Slider images={images}/>
       
       <h3 id='a1'>
         GOOD DEALS
@@ -92,7 +95,10 @@ const Home = () => {
         see list
         </button>
       </div>
-      <img src='affiche.png' height='50%'width='100%'></img>
+      <div>
+      <img id='a50'src='affiche.png' height='50%'width='100%'></img>
+      </div>
+     
       
     </div>
   );
