@@ -2,8 +2,8 @@ import React , { useState }from 'react'
 import './Gooddeals.css';
 import { IonIcon } from '@ionic/react';
 import { cartOutline , heartOutline, arrowForwardCircleOutline,arrowBackCircleOutline} from 'ionicons/icons' ;
-import Footer from './footer'
-import Carditemm from './Carditemm';
+import Footer from '../components/footer'
+import Carditemm from '../components/Carditemm';
 const Gooddeals= () => {
     const [data, setData] = useState([
         {
@@ -165,7 +165,7 @@ const Gooddeals= () => {
       </div>
       
    </div>
-   <Footer />
+   
     </div>
    
 

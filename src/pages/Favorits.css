@@ -1,0 +1,16 @@
+.Favorits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+
+}
+.Favorits h2 {
+    padding: 20px;
+}
+#p {
+    height: 30px;
+    font-size: 20px;
+    color: #120F98;
+}

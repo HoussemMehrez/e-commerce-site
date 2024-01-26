@@ -51,13 +51,10 @@
 }
 .cardtot {
     display: grid;
-    grid-template-columns: 1fr 250px 0 ;
+    grid-template-columns: 1fr 1fr 1fr  ;
     gap: 20px;
     justify-content: center;
-    align-items: center;
-    
-   
-    
+    align-items: center;    
 }
 #find {
     cursor: pointer;
