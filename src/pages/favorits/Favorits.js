@@ -1,7 +1,7 @@
 import React from 'react'
 import './Favorits.css'
-import { useFavorites } from '../components/Favoritescontext';
-import Carditemm from '../components/Carditemm';
+import { useFavorites } from '../../components/favorites/Favoritescontext';
+import Carditemm from '../../components/carditem/Carditemm';
 
 const Favorits = () => {
     const { favorites } = useFavorites();

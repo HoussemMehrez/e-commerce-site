@@ -1,9 +1,9 @@
 import React , { useState }from 'react'
-import './Gooddeals.css';
+import '../gooddeals/Gooddeals';
 import { IonIcon } from '@ionic/react';
 import { cartOutline , heartOutline, arrowForwardCircleOutline,arrowBackCircleOutline} from 'ionicons/icons' ;
-import Footer from '../components/footer'
-import Carditemm from '../components/Carditemm';
+import Footer from '../../components/footer/footer'
+import Carditemm from '../../components/carditem/Carditemm';
 const Gooddeals= () => {
     const [data, setData] = useState([
         {

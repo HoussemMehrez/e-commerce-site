@@ -1,9 +1,10 @@
 import React from 'react';
 import './Home.css';
-import Carousel from '../components/carousel';
-import Slider from '../components/slider';
-import '../components/slider.css'
+import Carousel from '../../components/carousel/carousel';
+import Slider from '../../components/slider/slider';
+import '../../components/slider/slider.css'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 
 
 
@@ -98,8 +99,6 @@ const Home = () => {
       <div className='aff'>
       <img id='a50'src='affiche.png' height='50%'width='100%'></img>
       </div>
-     
-      
     </div>
   );
 }

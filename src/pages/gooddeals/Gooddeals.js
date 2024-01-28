@@ -2,8 +2,7 @@ import React , { useState }from 'react'
 import './Gooddeals.css';
 import { IonIcon } from '@ionic/react';
 import { cartOutline , heartOutline, arrowForwardCircleOutline,arrowBackCircleOutline} from 'ionicons/icons' ;
-import Footer from '../components/footer'
-import Carditemm from '../components/Carditemm';
+import Carditemm from '../../components/carditem/Carditemm';
 const Gooddeals= () => {
     const [data, setData] = useState([
         {

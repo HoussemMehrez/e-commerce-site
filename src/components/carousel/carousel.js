@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Card from './card1';
+import Card from '../card1/card1';
 
 const Carousel = ({ cardData }) => {
   const [currentSlide, setCurrentSlide] = useState(0);

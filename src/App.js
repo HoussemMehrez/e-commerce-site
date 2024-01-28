@@ -1,14 +1,14 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/home/Home';
 
-import Navbar from './components/navbar';
-import Footer from './components/footer';
-import Gooddeals from './pages/Gooddeals';
-import Favorits from './pages/Favorits';
-import Smartphone from './pages/Smartphone'
-import { FavoritesProvider } from './components/Favoritescontext' ;
+import Navbar from './components/navbar/navbar';
+import Footer from './components/footer/footer';
+import Gooddeals from './pages/gooddeals/Gooddeals';
+import Favorits from './pages/favorits/Favorits';
+import Smartphone from './pages/smartphone/Smartphone'
+import { FavoritesProvider } from './components/favorites/Favoritescontext' ;
 
 const App = () => {
   return (
@@ -23,6 +23,7 @@ const App = () => {
           <Route path="/favorits" element={<Favorits />} />
           <Route path="/smartphone" element={<Smartphone />} />
         </Routes>
+        
 
         <Footer />
       </div>

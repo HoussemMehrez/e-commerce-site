@@ -12,10 +12,10 @@ function Footer() {
             <button>S'inscrire</button>
           </div>
           <div className="social-icons">
-            <img src='logofacebook.webp'alt="Facebook Logo" />
-            <img src='insta.png' alt="instagram Logo" />
-            <img src='linkedin.webp'alt="linkedin Logo" />
-            <img src='twitter.jpg' alt="twitter Logo" />
+            <img src='fb.png'alt="Facebook Logo" />
+            <img src='instagram.png' alt="instagram Logo" />
+            <img src='linkdin.png'alt="linkedin Logo" />
+            <img src='twitter.png' alt="twitter Logo" />
             
           </div>
         </div>

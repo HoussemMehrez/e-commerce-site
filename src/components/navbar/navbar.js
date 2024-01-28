@@ -3,7 +3,7 @@ import './navbar.css';
 import { IonIcon } from '@ionic/react';
 import { menuOutline , searchOutline , heartOutline , cartOutline, personAddOutline,heart} from 'ionicons/icons' ;
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { useFavorites } from './Favoritescontext';
+import { useFavorites } from '../favorites/Favoritescontext';
 
 const   Navbar = () => {
 
@@ -68,7 +68,7 @@ const   Navbar = () => {
                 </div>
                 <div className='home'><Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}><span>Home</span></Link></div>
                 <div className='support'><span>Support</span></div>
-                <div className='logo'><img src={require('./11.png')} alt='logo'></img></div>
+                <div className='logo'><img src='11.png' alt='logo'></img></div>
                 <div className='search'>
                     <div className={`search-bar ${searchVisible ? 'active' : ''}`}>
                         <input type='text' placeholder='Search...' />
