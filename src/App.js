@@ -8,7 +8,10 @@ import Footer from './components/footer/footer';
 import Gooddeals from './pages/gooddeals/Gooddeals';
 import Favorits from './pages/favorits/Favorits';
 import Smartphone from './pages/smartphone/Smartphone'
-import { FavoritesProvider } from './components/favorites/Favoritescontext' ;
+import cart from './pages/cart/cart'
+import { FavoritesProvider } from './pages/favorits/favorites/Favoritescontext' ;
+import Cart from './pages/cart/cart'; 
+import Orderdetails from './pages/payement/Orderdetails'
 
 const App = () => {
   return (
@@ -22,6 +25,9 @@ const App = () => {
           <Route path="/Gooddeal" element={<Gooddeals />} />
           <Route path="/favorits" element={<Favorits />} />
           <Route path="/smartphone" element={<Smartphone />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/cart/order_details" element={<Orderdetails />} />
+
         </Routes>
         
 

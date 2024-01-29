@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IonIcon } from '@ionic/react';
 import { heartOutline, cartOutline ,heart} from 'ionicons/icons';
-import { useFavorites } from '../favorites/Favoritescontext';
+import { useFavorites } from '../../pages/favorits/favorites/Favoritescontext';
 
 
 const Carditemm = ({ data }) => {

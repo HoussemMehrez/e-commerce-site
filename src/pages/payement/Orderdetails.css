@@ -1,0 +1,112 @@
+.etapes {
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    width: 50%;
+    height: 100px;
+}
+.etape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+#ion {
+    width: 30px;
+}
+.numetape {
+    border-radius: 50%;
+    width: 20px;
+    background-color: rgb(229, 226, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+#curent {
+    background-color: #1A35BD;
+}
+.nametapecurent {
+    font-weight: 500;
+   
+}
+.nametape{
+    font-weight: 200;
+}
+.relogin {
+    height: 70px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 30%;
+    
+    font-weight: 500;
+}
+.orderform {
+    display: block;
+    padding: 10px;
+}
+.orderform input {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#build {
+    color: #120F98;
+    font-weight: 500 ;
+    font-size: 1.2rem;
+}
+.inform {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+.yourorder {
+    display: flex;
+    justify-content: center;
+    align-items: first baseline;
+}
+.pagetot {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-bottom: 150px;
+}
+.details {
+    background-color: #F7F7F9;
+    height: 70%;
+    width: 70%;
+}
+.iteminform {
+    display: Grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+.oneinform {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+.oneinform input {
+    width: 60%;
+    
+}
+.moreinfo {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+    color: #1A35BD;
+}
+.moreinfo textarea {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 70px;
+    width: 70%;
+    padding: 5px;
+}
+.moremore {
+    width: 25%;
+}

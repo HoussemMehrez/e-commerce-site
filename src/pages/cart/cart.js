@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import ProductItem from '../productitem/productitem';
+import ProductItem from '../../components/productitem/productitem';
 import "./cart.css";
+import {  Link } from 'react-router-dom';
 const Cart = () => {
   const [products, setProducts] = useState([
     { id: 1, name: 'Product number 1', description: 'This is a section of descriptions...', liked: false, quantity: 1, price: 100, imageSrc: 'pc.png' },
@@ -65,7 +66,7 @@ const Cart = () => {
           <div className="total-amount">
             <h2>Total: </h2>
             <h2 className='total-a'>${getTotalAmount().toFixed(2)}</h2>
-            <button className="finish-order-btn">Finish the order</button>
+            <button className="finish-order-btn"><Link to="/cart/order_details" style={{ textDecoration: 'none', color: 'inherit' }}>Finish the order</Link></button>
           </div>
 
           {/* Payment methods */}

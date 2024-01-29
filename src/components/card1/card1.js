@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { heartOutline, cartOutline ,heart} from 'ionicons/icons';
 import { IonIcon } from '@ionic/react';
-import { useFavorites } from '../favorites/Favoritescontext';
+import { useFavorites } from '../../pages/favorits/favorites/Favoritescontext';
 import './card1.css';
 const cardData = [
   {

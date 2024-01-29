@@ -3,7 +3,7 @@ import './navbar.css';
 import { IonIcon } from '@ionic/react';
 import { menuOutline , searchOutline , heartOutline , cartOutline, personAddOutline,heart} from 'ionicons/icons' ;
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { useFavorites } from '../favorites/Favoritescontext';
+import { useFavorites } from '../../pages/favorits/favorites/Favoritescontext';
 
 const   Navbar = () => {
 
@@ -78,7 +78,7 @@ const   Navbar = () => {
                     </div>
                 </div>
                 <div className='favoris'><Link to="/favorits" style={{ textDecoration: 'none', color: 'inherit' }}>{favorites.length > 0 }<IonIcon icon={favorites.length > 0 ? heart : heartOutline} /></Link></div>
-                <div className='cart'><IonIcon icon={cartOutline} /></div>
+                <div className='cart'><Link to="/cart" style={{ textDecoration: 'none', color: 'inherit' }}>{favorites.length > 0 }<IonIcon icon={cartOutline} /></Link></div>
                 <div className='person'><IonIcon icon={personAddOutline} /></div>
                 
             </navbar>
