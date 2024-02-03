@@ -2,6 +2,7 @@ import React from 'react'
 import './Orderdetails.css'
 import { IonIcon } from '@ionic/react';
 import { chevronForwardOutline, lockClosedOutline} from 'ionicons/icons' ;
+import {  Link } from 'react-router-dom';
 const payement = () => {
   return (
     <div>
@@ -88,15 +89,44 @@ const payement = () => {
       </div>
       <div className='yourorder'>
         <div className='details'>
-          <h1>YOUR ORDER</h1>
-          <span>Product</span>
+          <div><h1>YOUR ORDER</h1></div>
+          <div className='product'><span>Product</span></div>
+          <div className='numberitems'><p>2 Items</p></div>
+          <div className='itemorder'>
+           <img src={require('./pc.png')} alt='pc'/>
+            <div>
+              <p>1 * DELL G15</p>
+              <p>color : noir</p>
+              <p>ref : 9S6-BOY10D</p>
+            </div>
+            <div>2500dt</div>
+          </div>
+          <div className='itemorder'>
+             <img src={require('./pc.png')} alt='pc'/>
+            <div>
+              <p>1 * DELL G15</p>
+              <p>color : noir</p>
+              <p>ref : 9S6-BOY10D</p>
+            </div>
+            <div>2500dt</div>
+          </div>
+          <div className='subtotal'>
+            <p>Subtotal</p>
+            <p>2500dt</p>
+          </div>
+          <div className='containerorder'>
+          <div className='ord'>
+            <Link to="/cart/order_details/payement-by-credit" style={{ textDecoration: 'none', color: 'inherit' }}><span>order</span></Link>
+          </div>
+          </div>
+          
         </div>
       
       </div>
       </div>
 
 
-      
+     
     </div>
   )
 }

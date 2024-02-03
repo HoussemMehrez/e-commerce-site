@@ -1,0 +1,59 @@
+.containeroptions {
+    padding: 20px;
+}
+.option1 {
+    color: #120F98;
+    font-weight: 500;
+ 
+}
+.options {
+    height: 70px;
+
+}
+.containcardinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    padding: 20px 0  ;
+    border-top: 3px solid #D1D3D9;
+    border-bottom: 3px solid #D1D3D9;
+
+   
+    
+}
+.cardinfo {
+    width: 60%;
+    height: 80%;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+}
+.creditcardinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:50px;
+    
+}
+.checkcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:70px;
+}
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #120F98;
+    width: 60%;
+    color: white;
+    height: 30px;
+    border-radius: 20px;
+    
+}
+#newoption {
+    padding-top: 10px;
+}

@@ -12,6 +12,7 @@ import cart from './pages/cart/cart'
 import { FavoritesProvider } from './pages/favorits/favorites/Favoritescontext' ;
 import Cart from './pages/cart/cart'; 
 import Orderdetails from './pages/payement/Orderdetails'
+import Creditpayement from './pages/payement/Creditpayement';
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/smartphone" element={<Smartphone />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/cart/order_details" element={<Orderdetails />} />
+          <Route path="/cart/order_details/payement-by-credit" element={<Creditpayement />} />
 
         </Routes>
         
