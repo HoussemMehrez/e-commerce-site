@@ -1,38 +1,40 @@
-
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
-
 import Navbar from './components/navbar/navbar';
 import Footer from './components/footer/footer';
-import Gooddeals from './pages/gooddeals/Gooddeals';
+import Gooddeals from './pages/gooddeals/Gooddeals1';
 import Favorits from './pages/favorits/Favorits';
-import Smartphone from './pages/smartphone/Smartphone'
-import cart from './pages/cart/cart'
-import { FavoritesProvider } from './pages/favorits/favorites/Favoritescontext' ;
-import Cart from './pages/cart/cart'; 
-import Orderdetails from './pages/payement/Orderdetails'
+import Smartphone from './pages/smartphone/Smartphone';
+import { FavoritesProvider } from './pages/favorits/favorites/Favoritescontext';
+import Cart from './pages/cart/cart';
+import Orderdetails from './pages/payement/Orderdetails';
+import Description from './components/carditem/description/description';
 
 const App = () => {
+
+ 
+  
+
   return (
     <Router>
       <FavoritesProvider>
-      <div>
-       <Navbar />
+        <div>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Gooddeal" element={<Gooddeals />} />
+            <Route path="/favorits" element={<Favorits />} />
+            <Route path="/smartphone" element={<Smartphone />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/cart/order_details" element={<Orderdetails />} />
+            <Route path="/description" element={<Description />} />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Gooddeal" element={<Gooddeals />} />
-          <Route path="/favorits" element={<Favorits />} />
-          <Route path="/smartphone" element={<Smartphone />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/cart/order_details" element={<Orderdetails />} />
-
-        </Routes>
-        
-
-        <Footer />
-      </div>
+           
+          </Routes>
+          
+          <Footer />
+        </div>
       </FavoritesProvider>
     </Router>
   );

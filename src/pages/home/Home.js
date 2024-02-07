@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 
 
+
+
 const Home = () => {
   const cardData = [
     {
@@ -73,6 +75,8 @@ const Home = () => {
     },
     
   ]
+ 
+
   const images = ['affiche.png', 'affiche1.png', 'affiche.png'];;  
   return (
     <div >
@@ -99,6 +103,8 @@ const Home = () => {
       <div className='aff'>
       <img id='a50'src='affiche.png' height='50%'width='100%'></img>
       </div>
+  
+      
     </div>
   );
 }

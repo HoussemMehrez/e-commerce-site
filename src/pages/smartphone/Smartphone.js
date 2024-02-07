@@ -1,5 +1,5 @@
 import React , { useState }from 'react'
-import '../gooddeals/Gooddeals';
+import '../gooddeals/Gooddeals1';
 import { IonIcon } from '@ionic/react';
 import { cartOutline , heartOutline, arrowForwardCircleOutline,arrowBackCircleOutline} from 'ionicons/icons' ;
 import Footer from '../../components/footer/footer'

@@ -5,6 +5,7 @@ import { heartOutline, cartOutline ,heart} from 'ionicons/icons';
 import { IonIcon } from '@ionic/react';
 import { useFavorites } from '../../pages/favorits/favorites/Favoritescontext';
 import './card1.css';
+import { Link } from 'react-router-dom';
 const cardData = [
   {
     id: 1,
