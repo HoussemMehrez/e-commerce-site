@@ -1,0 +1,65 @@
+.pagetotale {
+    display: grid;
+    grid-template-columns: 20% 75%;
+    padding-bottom: 100px;
+    gap: 30px;
+}
+h3 {
+    padding: 10px 30px;
+    font-weight: 700 ;
+    font-size: 1.5rem;
+}
+h2 {
+    font-weight: 700 ;
+    font-size: 2rem;
+}
+.containerdash {
+    display: block;
+    border-right:  1px solid black;
+    height: 100%;
+    padding: 0 10px;
+  
+    
+
+}
+.containerdash img {
+    width: 70%;
+
+}
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashoption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.orderpath {
+    width: 100%;
+    display: block;
+    padding: 40px 0;
+}
+.listorder {
+    display: block;
+    width: 100%;
+}
+.listetotale {
+    background-color: #F8F8F8;
+    border-radius: 30px;
+    padding: 30px 10px ;
+}
+#titlee span {
+    color: #232321;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+#current {
+    background-color: #1A35BD;
+    color: white;
+}
+.recentpur {
+    border-bottom: 1px solid #232321;
+}
