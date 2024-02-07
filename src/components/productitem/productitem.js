@@ -7,9 +7,7 @@ const ProductItem = ({ name, description, price, liked, quantity, imageSrc, togg
 
   return (
     <div className="item">
-      {/* Product image */}
       <img src={imageSrc} alt={name} />
-      {/* Product details */}
       <div className="product-details">
         <div className="product-name">{name}</div>
         <div className='product-description'>{description}</div>

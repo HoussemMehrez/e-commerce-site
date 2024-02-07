@@ -26,35 +26,35 @@ const cardData = [
    
   },
   {
-    id: 3,
+    id: 4,
     imageSrc: 'pc.png',
     title: 'pc gamer3',
    
   }, {
-    id: 3,
+    id: 5,
     imageSrc: 'pc.png',
     title: 'pc gamer3',
    
   }, {
-    id: 3,
+    id: 6,
     imageSrc: 'pc.png',
     title: 'pc gamer3',
    
   }, {
-    id: 3,
+    id: 7,
     imageSrc: 'pc.png',
     title: 'pc gamer3',
     
    
   },
   {
-    id: 3,
+    id: 8,
     imageSrc: 'pc.png',
     title: 'pc gamer3',
    
   },
   {
-    id: 3,
+    id: 9,
     imageSrc: 'pc.png',
     title: 'pc gamer3',
    
