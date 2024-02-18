@@ -15,23 +15,42 @@ footer {
     flex-direction: column ;
   } 
   }
-  .left-section {
+  .left-section1 {
     text-align: left;
   }
-  
+  .left-section2 {
+    text-align: left;
+  }
   .subscription-form {
-    margin-top: 10px;
+    display: flex;
+    margin-top: 10%;
+    align-items: center;
   }
+
   
-  .subscription-form input {
-    margin-right: 5px;    
-    border-radius: 10px;  
+  .subscription-form input[type="text"] {
+    padding: 9.5px 50px;
+    border: 1px solid #ccc;
+    border-radius: 30px 0 0 30px; 
   }
-  
+  .follow-us {
+    display: flex;
+    margin-top: 5%;
+    text-align: left; 
+  } 
+
   .subscription-form button {
-    border-radius: 10px;   
+    padding: 10.5px 20px;
+    background-color: #ccc; 
+    color: black; 
+    border: none;
+    border-radius: 0 30px 30px 0; 
+    cursor: pointer;
   }
   
+  .subscription-form button:hover {
+    background-color: #999; 
+  }
   .social-icons {
     margin-top: 10px;
     display: flex;
@@ -43,7 +62,11 @@ footer {
     height: 30px;
   }
   
-  .right-section {
-    text-align: right;
+  .right-section{
+    
+    margin-top:10%;
+    margin-left: 31%;
   }
+
+
   

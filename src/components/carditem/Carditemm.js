@@ -24,9 +24,9 @@ const Carditemm = ({ data }) => {
   return (
     <div className="cardtot">
       {data.map((item, index) => (
-        <Link to="/description" key={index} className="card"> 
+        <div key={index} className="card"> 
           <div className='cardimg'>
-            <img src={item.img} alt={item.nom} />
+          <Link to="/description" > <img src={item.img} alt={item.nom} /> </Link>
             <IonIcon icon={favoriteStatus[item.nom] ? heart : heartOutline} id='heart' onClick={() => handleToggleFavorite(item)} style={{ color: favoriteStatus[item.nom] ? 'red' : 'black' }} /> {/* Utilisation de favoriteStatus */}
           </div>
           <p>{item.nom}</p>
@@ -36,7 +36,7 @@ const Carditemm = ({ data }) => {
             <IonIcon icon={cartOutline} id='iconcart' />
             <p>Add to cart</p>
           </div>
-        </Link>
+        </div>
       ))}
     </div>
   );

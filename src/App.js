@@ -13,7 +13,7 @@ import { FavoritesProvider } from './pages/favorits/favorites/Favoritescontext';
 import Cart from './pages/cart/cart';
 import Orderdetails from './pages/payement/Orderdetails';
 import Description from './components/carditem/description/description';
-
+import GoodDealsAdmin from './admin/GoodDealsAdmin/GoodDealsAdmin'
 
 
 
@@ -46,7 +46,7 @@ const App = () => {
           <Route path="/admin/Dashbord" element={<Dashbord />} />
           <Route path="/admin/Orderlist" element={<Orderlist></Orderlist>} />
           <Route path="/description" element={<Description/>} />
-          
+          <Route path="/admin/GoodDealsAdmin" element={<GoodDealsAdmin/>} />
 
         </Routes>
         
