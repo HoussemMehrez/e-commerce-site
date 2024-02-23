@@ -21,6 +21,7 @@ import GoodDealsAdmin from './admin/GoodDealsAdmin/GoodDealsAdmin'
 import Creditpayement from './pages/payement/Creditpayement';
 import Dashbord from './admin/Dashbord/Dashbord';
 import Orderlist from './admin/Orderlist/Orderlist';
+import Signup from './pages/signup/Signup';
 
 
 const App = () => {
@@ -36,10 +37,11 @@ const App = () => {
           <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/Gooddeal" element={<Gooddeals />} />
           <Route path="/favorits" element={<Favorits />} />
           <Route path="/smartphone" element={<Smartphone />} />
+          <Route path="/" element={<Signup/>} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/cart/order_details" element={<Orderdetails />} />
           <Route path="/cart/order_details/payement-by-credit" element={<Creditpayement />} />
