@@ -121,7 +121,7 @@ const Signup = () => {
             />
           </div>
         </div>
-        <button type="submit" style={{ fontSize: '25px' }}>Sign up</button>
+        <button type="submit" style={{ height: '70px' ,width: '500px', fontSize: '25px' }}>Sign up</button>
       </form>
     </div>
   );
