@@ -25,7 +25,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  width: 300px; /* Set the width for all input fields */
+  
+  
+
 }
 
 .information {
@@ -34,8 +36,10 @@
   gap: 20px;
   width: 300px;
   justify-content: center;
-  align-items: left;
+  align-items: center;
+  margin: 10%;
 }
+
 
 label {
   padding: 5px;
@@ -54,4 +58,6 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  height: 70px; 
+  width: 500px;
 }
