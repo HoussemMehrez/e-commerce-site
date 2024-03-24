@@ -1,0 +1,86 @@
+.informationorder {
+    width: 100%;
+    display: grid ;
+    grid-template-columns: 18% 18% 18% 18% 18% 10%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #232321;
+    
+}
+.oneord  {
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+
+}
+.chek {
+    padding-right: 20px;
+}
+
+.oneordcheck{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.flech{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.flech-left{
+    padding-right: 20px;
+}
+
+.flech-right{
+    margin-left: 525px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+.page-navigation {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+  
+.page-navigation:hover {
+    background-color: #f0f0f0;
+}
+  
+.page-navigation:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+  
+.page-number {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+  
+.page-number:hover {
+    background-color: #f0f0f0;
+}
+  
+.page-number.active {
+    background-color: #1A35BD;
+    color: #fff;
+}
+
+.trash{
+    cursor: pointer;
+}

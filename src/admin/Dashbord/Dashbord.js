@@ -32,7 +32,7 @@ const Dashbord = () => {
     <div className='pagetotale'>
        <div className='pagedash'>
           <div className='containerdash'>
-            <div  className='imgcontainer'><img src={require('./11.png')}></img></div>
+            <div  className='imgcontainer'><img src='11.png'></img></div>
             <div className='dashoption' id='current'><span>Dashbord</span></div>
             <div className='dashoption' ><Link to="/admin/Orderlist" style={{ textDecoration: 'none', color: 'inherit' }}><span>Orderlist</span></Link></div>
           </div>

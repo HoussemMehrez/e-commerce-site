@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#titre {
+  display: grid;
+  grid-template-columns: 50%;
+}
+
+#sous_titre {
+  display: grid;
+  grid-template-columns: 24% 33% 33%;
+}
+
+#des {
+  margin-right: 100%;
+  width: 100%;
+}
+
+#nom_art {
+  margin-left: 50%;
+  box-shadow: 0 4px 8px rgb(221, 220, 222);
+  background-color: gainsboro;
+  width: 50%;
+  padding-top: 5%;
+  padding-left: 10%;
+  position: relative;
+  padding-bottom: 50%;
+  
+}
+
+#imeg {
+  margin-right: 5%;
+}
+#des_art {
+  margin-right: 30%;
+  width: 100%;
+}
+
+#p4 {
+  margin-top: 10%;
+  width: 100%;
+}
+
+#stock {
+  color: blue;
+  position: absolute;
+  top:290px;
+  right: 100px;
+}
+
+#imag {
+  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#brand {
+  display: flex;
+  flex-direction: column;
+  gap: 50px; 
+  position: absolute;
+  top: 260px;
+  right: 80px;
+}
+.quantity-controls button {
+  font-size: 15px; /* Adjust the size as needed */
+  margin-left: 22px;
+}
+#quantity{
+  display: flex;
+  position: absolute;
+  top: 195px;
+  left: 15px;
+  margin-left: 25%;
+  margin-bottom: 80%;
+}
+#add{
+  background-color: #120f98;
+  color:azure;
+  border-radius: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+  right: 49px;
+  top:330px;
+}
+#nom{
+  position: absolute;
+  left: 115px;
+  top: 20px;
+}
+#price{
+  margin-top: 15px;
+  margin-left: 50px;
+}
+#quan{
+  margin-top: 10px;
+}
+#technical{
+  margin-bottom: 50px;
+}

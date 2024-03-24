@@ -97,7 +97,7 @@ const Home = () => {
       <Carousel cardData={cardData}/>
       <div id='a3'>
         <button id='a2'>
-        <Link to="/Gooddeal" style={{ textDecoration: 'none', color: 'inherit' }}>See list</Link>
+        <Link to="/bestsellers" style={{ textDecoration: 'none', color: 'inherit' }}>See list</Link>
         </button>
       </div>
       <div className='aff'>

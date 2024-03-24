@@ -1,18 +1,18 @@
 import React , { useState } from 'react'
 import './Orderlist.css'
 import Orderitem from '../Orderitem/Orderitem'
-import { OrderData } from '../Orderdata/OrderData'
+import { useSelector,UseDispatch } from 'react-redux';
 import {  Link } from 'react-router-dom';
 
 const Orderlist = () => {
-
+ const OrderData = useSelector ((store)=>store?.order?.ordData)
 
 
   return (
     <div className='pagetotale'>
        <div className='pagedash'>
           <div className='containerdash'>
-            <div  className='imgcontainer'><img src={require('./11.png')}></img></div>
+            <div  className='imgcontainer'><img src='./11.png'></img></div>
             <div className='dashoption'><Link to="/admin/Dashbord" style={{ textDecoration: 'none', color: 'inherit' }}><span>Dashbord</span></Link></div>
             <div className='dashoption' id='current'><span>Orderlist</span></div>
           </div>

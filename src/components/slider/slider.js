@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
-import './slider.css'; // Assurez-vous d'importer votre fichier CSS
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Importez les icônes de flèches de Font Awesome
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { goToNextSlide, goToPrevSlide } from '../../redux/slices/slider'; // Importez les actions du slice Redux
+import './slider.css';
 
-const Slider = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+
+const Slider = () => {
+  const currentIndex = useSelector(state => state.slider.currentIndex); // Sélectionner l'index actuel depuis le state Redux
+  const images = useSelector((store) => store?.slider?.images); // Sélectionner les images depuis le state Redux
+  const dispatch = useDispatch(); // Initialiser le dispatch
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+    dispatch(goToPrevSlide()); // Dispatch l'action pour passer à la diapositive précédente
   };
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    dispatch(goToNextSlide()); // Dispatch l'action pour passer à la diapositive suivante
   };
 
   return (
@@ -20,8 +24,8 @@ const Slider = ({ images }) => {
           <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
         </div>
         <div className="slider-arrows">
-          <div className="slider-prev" onClick={prevSlide}>&#9664;</div>
-          <div className="slider-next" onClick={nextSlide}>&#9654;</div>
+        <div className="slider-prev" onClick={prevSlide}>{'<'}</div>
+          <div className="slider-next" onClick={nextSlide}>{'>'}</div>
         </div>
       </div>
     </div>

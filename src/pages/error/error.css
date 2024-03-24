@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0; 
+    
+   
+}
+.imm img {
+    height: 620px;
+    width: 1300px;
+}
+.bloc {
+    
+    position: absolute;
+    top: 2300px;
+    left: 100px;
+}
+.num {
+    padding-left: 80px;
+    color: white;
+    font-size: 150px;
+    font-weight: 900;
+    padding-bottom: 0px;
+
+    
+
+}
+.phr {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 80px;
+    padding-top: 2px;
+}

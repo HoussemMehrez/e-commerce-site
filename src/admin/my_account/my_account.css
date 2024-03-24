@@ -1,0 +1,132 @@
+.my{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.all {
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+    justify-content: space-between;
+
+}
+
+
+
+.ll {
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+.boxx {
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.box11 {
+    border: 0.5px solid #667EED;
+
+
+}
+
+.box22 {
+    border: 0.5px solid #667EED;
+    border-top: none;
+
+}
+
+.info {
+    font-weight: 400;
+    font-size: 20px;
+    height: 30px;
+}
+
+.align {
+    display: flex;
+    justify-content: space-between;
+}
+.contact {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+.edit {
+    color:  #120F98;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.bb {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 150px;
+}
+
+.alg {
+    display: grid;
+    margin-left: 5px;
+    grid-template-columns: 15% 75%;
+    margin-bottom: 5px;
+
+
+}
+
+.adress {
+    font-size: 15px;
+    font-weight: 500;
+}
+.manage {
+    color:  #120F98;
+
+}
+.prg1 {
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.edd {
+    font-size: 16px;
+    font-weight: 400;
+}
+.edit1 {
+    color:  #120F98;
+    font-weight: 500;
+
+}
+.last {
+    display: grid;
+    justify-items: end;
+    
+    flex-direction: column;
+}
+
+.butt {
+   background-color: #120F98;
+   color: white;
+   height: 40px;
+   width: 180px;
+   border-radius: 15px;
+   margin-right: 35px;
+}
+.butt span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+}
+.llaa {
+    margin-right: 35px;
+    margin-top: 20px;
+}
+.ddd {
+    font-weight: 400;
+}
+.ddd1 {
+    color: #120F98;
+    font-weight: 500;
+    padding-top: 5px;
+}

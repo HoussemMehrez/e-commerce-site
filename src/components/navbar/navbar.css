@@ -1,7 +1,7 @@
 navbar {
     display: flex;
     align-items: center;
-    padding: 0 24px;
+    padding: 24px;
     height: 72px;
     width: 100%;   
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -25,6 +25,8 @@ navbar {
     font-size: 23px;
     font-family: 'Montserrat';
     cursor: pointer;
+    position: absolute;
+    left: 250px;
 }
 .support {
     width: 120PX;
@@ -32,13 +34,16 @@ navbar {
     font-size: 23px;
     font-family: 'Montserrat';
     cursor: pointer;
+    position: absolute;
+    left: 400px;
 }
 .logo {
     width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    position: absolute;
+    left: 550px;
     
 }
 .logo img {
@@ -49,7 +54,6 @@ navbar {
     width: 300px;
     display: flex;
     justify-content: right;
-    align-items: left;
     color: #1A35BD;
     font-size: 23px;
     font-family: 'Montserrat';
@@ -57,6 +61,8 @@ navbar {
     border: 1px solid #1A35BD;
     border-radius: 30px;
     padding: 3px;
+    position: absolute;
+    left: 900px;
 }
 
 .favoris {
@@ -68,7 +74,8 @@ navbar {
     font-size: 23px;
     font-family: 'Montserrat';
     cursor: pointer;
-
+    position: absolute;
+    left: 1250px;
 }
 .cart {
     width:50px;
@@ -79,6 +86,8 @@ navbar {
     font-size: 23px;
     font-family: 'Montserrat';
     cursor: pointer;
+    position: absolute;
+    left: 1350px;
 }
 .person {
     width: 50px;
@@ -89,7 +98,8 @@ navbar {
     font-size: 23px;
     font-family: 'Montserrat';
     cursor: pointer;
-    
+   position: absolute;
+   left: 1450px;
 }
 .search-bar {
     overflow: hidden;

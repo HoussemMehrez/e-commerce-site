@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Card from '../card1/card1';
+import './carousel.css'
+import { useSelector } from 'react-redux'; // Utilisation de useSelector avec une minuscule initiale
+import { addFavorite, removeFavorite } from '../../redux/slices/card1data';
 
-const Carousel = ({ cardData }) => {
+const Carousel = ({}) => {
+  const cardData = useSelector((store) => store?.favorites?.cardData);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [hoveredCard, setHoveredCard] = useState(null);
 
@@ -50,11 +55,13 @@ const Carousel = ({ cardData }) => {
             onMouseEnter={() => setHoveredCard(card.id)}
             onMouseLeave={() => setHoveredCard(null)}
           >
-            <Card
-              imageSrc={card.imageSrc}
-              title={card.title}
-              isHovered={hoveredCard === card.id}
-            />
+            <Link to={'/description' }>
+              <Card
+                imageSrc={card.imageSrc}
+                title={card.title}
+                isHovered={hoveredCard === card.id}
+              />
+            </Link>
           </div>
         ))}
       </div>

@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-
-export const OrderData = () => {
-    const [ordData,setordData]=useState([
+import { createSlice } from '@reduxjs/toolkit'
+const initialState = {
+    ordData:[
         {
             id : 1 ,
             Date : '8 nov 2023' ,
@@ -17,7 +16,7 @@ export const OrderData = () => {
             Namecustomer : 'Houssem' ,
             statut : 'delivered',
             amount : '200dt' ,
-            product : 'ASUS VIVOBOOK' ,
+            product : 'AVIVOBOOK' ,
         },
         {
             id : 3 ,
@@ -177,9 +176,24 @@ export const OrderData = () => {
             product : 'ASUS VIVOBOOK' ,
 
 
-        },
-    ])
-  return (
-    {ordData}
-  )
-}
+        }
+    ],
+    currentPage: 1,
+};
+export const orderSlice = createSlice({
+    name: 'order',
+    initialState,
+    reducers: {
+      setCurrentPage: (state, action) => {
+        state.currentPage = action.payload;
+      },
+      removeItem: (state, action) => {
+        state.ordData = state.ordData.filter(item => item.id !== action.payload);
+      },
+      
+    }
+  });
+  
+  export const { setCurrentPage, removeItem } = orderSlice.actions;
+  
+  export default orderSlice.reducer;

@@ -1,9 +1,9 @@
 import React , { useState, useEffect }from 'react'
-import './Gooddeals.css';
+import './bestsellers1.css';
 import { IonIcon } from '@ionic/react';
 import { cartOutline , heartOutline, arrowForwardCircleOutline,arrowBackCircleOutline} from 'ionicons/icons' ;
 import Carditemm from '../../components/carditem/Carditemm';
-const Gooddeals= () => {
+const Bestsellers= () => {
     const [data, setData] = useState([
         {
             id: 1 ,
@@ -276,7 +276,7 @@ const Gooddeals= () => {
         
         <div className='totpage'>
         <div className='title'>
-          <h2>GOOD DEALS</h2>
+          <h2>BEST SELLERS</h2>
           <p>Save all your favorite articles</p>
         </div>
         <div className='sortbuttonposition'>
@@ -307,5 +307,5 @@ const Gooddeals= () => {
   )
 }
 
-export default Gooddeals ;
+export default Bestsellers ;
 
