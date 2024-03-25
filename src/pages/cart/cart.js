@@ -3,6 +3,7 @@ import ProductItem from '../../components/productitem/productitem';
 import "./cart.css";
 import CardList from '../../components/cardlist/cardlist';
 import { CardData } from "../../components/carddata/cardata"
+import { Link } from 'react-router-dom';
 const YourShoppingCartComponent = () => {
   const [products, setProducts] = useState([
     { id: 1, name: 'Product number 1', description: 'This is a section of descriptions...', liked: false, quantity: 1, price: 100, imageSrc: 'pc.png' },
@@ -65,7 +66,9 @@ const YourShoppingCartComponent = () => {
           <div className="total-amount">
             <h2>Total: </h2>
             <h2 className='total-a'>${getTotalAmount().toFixed(2)}</h2>
+            <Link to ='/cart/order_details'>
             <button className="finish-order-btn">Finish the order</button>
+            </Link>
           </div>
 
           <div className="payment-methods">

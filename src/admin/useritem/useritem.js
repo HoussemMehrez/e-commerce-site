@@ -2,7 +2,6 @@ import React from 'react'
 import './useritem.css'
 import { IonIcon } from '@ionic/react';
 import { closeOutline} from 'ionicons/icons' ;
-import { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { setCurrentPage, removeItem } from '../../redux/slices/userdata';
 import { user } from '../../redux/store';

@@ -10,15 +10,14 @@ import Smartphone from './pages/smartphone/Smartphone';
 import { FavoritesProvider } from './pages/favorits/favorites/Favoritescontext';
 import Cart from './pages/cart/cart';
 import Orderdetails from './pages/payement/Orderdetails';
-import Description from './components/carditem/description/description';
-
-
-
-
 
 import Creditpayement from './pages/payement/Creditpayement';
 import Dashbord from './admin/Dashbord/Dashbord';
 import Orderlist from './admin/Orderlist/Orderlist';
+import Descripttion from './components/description/description';
+import Bestsellers from './pages/bestsellers/bestsellers1';
+import Sign from './pages/sign/sign';
+import Navbaradmin from './components/navbar/navbaradmin';
 
 
 const App = () => {
@@ -26,7 +25,7 @@ const App = () => {
    
       <FavoritesProvider>
         <div>
-          <Navbar />
+          <Navbaradmin/>
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -38,7 +37,9 @@ const App = () => {
           <Route path="/cart/order_details/payement-by-credit" element={<Creditpayement />} />
           <Route path="/admin/Dashbord" element={<Dashbord />} />
           <Route path="/admin/Orderlist" element={<Orderlist></Orderlist>} />
-          <Route path="/description" element={<Description/>} />
+          <Route path="/description" element={<Descripttion/>} />
+          <Route path="/bestsellers" element={<Bestsellers/>} />
+          <Route path="/sign" element={<Sign/>} />
           
 
         </Routes>
