@@ -16,20 +16,18 @@ function Footer() {
           <p>Follow Us</p>
         </div> 
           <div className="social-icons">
-            <img src='fb.png' alt="Facebook Logo" />
-            <img src='instagram.png' alt="Instagram Logo" />
-            <img src='linkdin.png' alt="LinkedIn Logo" />
-            <img src='twitter.png' alt="Twitter Logo" />
+            <img src='fb.png'alt="Facebook Logo" />
+            <img src='instagram.png' alt="instagram Logo" />
+            <img src='linkdin.png'alt="linkedin Logo" />
+            <img src='twitter.png' alt="twitter Logo" />
+            
           </div>
         </div>
-      </div>
-      <div className="right-section">
-        <div className='containcontact'>
-        <p>Contact us : </p> 
-        <p>contact@theteczone.com</p>
+        <div className="right-section">
+          <p>Contact : contact@theteczone.com</p>
         </div>
-      </div>
-    </footer>
+      </footer>
+    
   );
 }
 

@@ -1,0 +1,14 @@
+.ADD
+{
+    color: blue;
+    font-size: 3rem; 
+}
+.ADDContainer
+{
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 238.95px;
+}
