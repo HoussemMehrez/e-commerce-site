@@ -25,7 +25,7 @@ const App = () => {
    
       <FavoritesProvider>
         <div>
-          <Navbaradmin/>
+          <Navbar/>
 
         <Routes>
           <Route path="/" element={<Home />} />

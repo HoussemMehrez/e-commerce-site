@@ -54,10 +54,11 @@
   
   button {
     padding: 10px;
-    background-color: blue;
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
+  }
+  #color{
+    background-color: blue;
+    color: aliceblue;
   }

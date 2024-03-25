@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { increaseQuantity as increaseQty, decreaseQuantity as decreaseQty } from '../../redux/slices/descripttion'; // Utilisation d'alias lors de l'importation
 
 import './description.css'
+import { Link } from 'react-router-dom';
 
 const Description = ({}) => {
   const dispatch = useDispatch();
